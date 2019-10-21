@@ -147,7 +147,7 @@ Route::get('/send-post/', 'SendPostController@index');
 
 Route::post('/export-content', 'AjaxController@ExportContent');
 Route::post('/csv-to-reupload', 'AjaxController@CsvToReupload');
-
+Route::get('/history-ghani', 'GhaniController@index')->name('history.ghani');
 
 
 Route::get('/import-from-buffer', function(){
